@@ -1,0 +1,51 @@
+/* addCategory.css */
+
+.add-category {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .add-category h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .add-category .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .add-category label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .add-category input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 2rem;
+    font-size: larger;
+  }
+  
+  .add-category button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-category button:hover {
+    background-color: #0056b3;
+  }
+  .label{
+    font-size: 30px;
+    font-weight: bold;
+    color:white;
+    margin-bottom: 1rem;
+  }
+  

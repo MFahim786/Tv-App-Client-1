@@ -1,0 +1,49 @@
+/* addVideo.css */
+
+.add-video {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .add-video h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .add-video .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .add-video label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .add-video input[type="text"],
+  .add-video select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-video button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-video button:hover {
+    background-color: #0056b3;
+  }
+  .label{
+    font-size: 30px;
+    font-weight: bold;
+    color:white;
+    margin-bottom: 1rem;
+  }  
