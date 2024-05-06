@@ -3,7 +3,7 @@ import '../../css/addcategorey.css';
 import Dashboard from '../../dashboard';
 import {addCategorey} from '../../services/addcategorey';
 import { categoreylist } from '../../services/addcategorey';
-import { deletevideo } from '../../services/addvideos';
+import { deletecatergorey } from '../../services/deletecategorey';
 const AddCategory = () => {
   const [category, setCategory] = useState({
     videoCategory: ''
@@ -24,13 +24,12 @@ const AddCategory = () => {
     fetchData();
   }, []);
   const handleDelete = async (name) => {
-    console.log('=======' + name);
     try {
       // Show confirmation alert before deleting
-      const confirmDelete = window.confirm('Are you sure you want to delete this video?');
+      const confirmDelete = window.confirm('Are you sure you want to delete this Categorey?');
       if (confirmDelete) {
         // Delete the video and update the list
-        await deletevideo(name);
+        await deletecatergorey({name});
         setCategories(categorey.filter((cat) => cat.name !== name));
       }
     } catch (error) {
@@ -78,7 +77,7 @@ const AddCategory = () => {
             
          
             {/* Delete button */}
-            <button className="delete-button" onClick={() => handleDelete(cate.categorey)}>Delete</button>
+            <button className="delete-button" onClick={() => handleDelete(cate.categorey,cate._id)}>Delete</button>
           </li>
            ))}
       </div>
