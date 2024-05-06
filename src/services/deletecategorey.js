@@ -1,11 +1,15 @@
 import { baseurl } from "../utils/url";
-const deletevideo = async (name) => {
+const deletecatergorey = async ({name}) => {
     console.log("Request is recived with id:", name);
     try {
         const response = await fetch(`${baseurl}/api/deletecatergorey`, {
             method: 'DELETE',
-            
-            body: JSON.stringify({ categoryName: `${name}` })
+            headers: {
+                'Content-Type': 'application/json' // Specify content type
+            },
+            body: JSON.stringify({ 
+                categoryName: name 
+            })
         });
 
         if (!response.ok) {
@@ -19,4 +23,4 @@ const deletevideo = async (name) => {
         throw error;
     }
 };
-export { deletevideo };
+export { deletecatergorey };
